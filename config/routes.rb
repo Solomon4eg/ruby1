@@ -1,4 +1,6 @@
 Ruby1::Application.routes.draw do
+  resources :orders
+
   resources :clients
 
   # The priority is based upon order of creation:

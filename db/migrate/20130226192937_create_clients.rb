@@ -7,7 +7,7 @@ class CreateClients < ActiveRecord::Migration
       t.string :phone
       t.string :email
       t.string :comment
-      t.integer :statusid
+      t.integer :status_id
 
       t.timestamps
     end

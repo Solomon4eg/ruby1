@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20130226192937) do
     t.string   "phone"
     t.string   "email"
     t.string   "comment"
-    t.integer  "statusid"
+    t.integer  "status_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
