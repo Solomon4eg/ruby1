@@ -1,4 +1,8 @@
 Ruby1::Application.routes.draw do
+  resources :rel_table_orders
+
+  resources :tables
+
   resources :orders
 
   resources :clients

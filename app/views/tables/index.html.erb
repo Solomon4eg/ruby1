@@ -1,0 +1,35 @@
+<h1>Listing tables</h1>
+
+<table>
+  <tr>
+    <th>Hall</th>
+    <th>Minnumber</th>
+    <th>Maxnumber</th>
+    <th>Number</th>
+    <th>Name</th>
+    <th>Smoke</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tables.each do |table| %>
+  <tr>
+    <td><%= table.hall_id %></td>
+    <td><%= table.minNumber %></td>
+    <td><%= table.maxNumber %></td>
+    <td><%= table.number %></td>
+    <td><%= table.name %></td>
+    <td><%= table.smoke %></td>
+    <td><%= table.comment %></td>
+    <td><%= link_to 'Show', table %></td>
+    <td><%= link_to 'Edit', edit_table_path(table) %></td>
+    <td><%= link_to 'Destroy', table, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Table', new_table_path %>

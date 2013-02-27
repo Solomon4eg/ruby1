@@ -1,0 +1,29 @@
+<%= form_for(@rel_table_order) do |f| %>
+  <% if @rel_table_order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rel_table_order.errors.count, "error") %> prohibited this rel_table_order from being saved:</h2>
+
+      <ul>
+      <% @rel_table_order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :table_id %><br />
+    <%= f.number_field :table_id %>
+  </div>
+  <div class="field">
+    <%= f.label :order_id %><br />
+    <%= f.text_field :order_id %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br />
+    <%= f.number_field :number %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

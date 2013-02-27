@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Hall:</b>
+  <%= @table.hall_id %>
+</p>
+
+<p>
+  <b>Minnumber:</b>
+  <%= @table.minNumber %>
+</p>
+
+<p>
+  <b>Maxnumber:</b>
+  <%= @table.maxNumber %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @table.number %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @table.name %>
+</p>
+
+<p>
+  <b>Smoke:</b>
+  <%= @table.smoke %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @table.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_table_path(@table) %> |
+<%= link_to 'Back', tables_path %>

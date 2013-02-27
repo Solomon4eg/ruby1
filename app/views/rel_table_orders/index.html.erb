@@ -1,0 +1,27 @@
+<h1>Listing rel_table_orders</h1>
+
+<table>
+  <tr>
+    <th>Table</th>
+    <th>Order</th>
+    <th>Number</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rel_table_orders.each do |rel_table_order| %>
+  <tr>
+    <td><%= rel_table_order.table_id %></td>
+    <td><%= rel_table_order.order_id %></td>
+    <td><%= rel_table_order.number %></td>
+    <td><%= link_to 'Show', rel_table_order %></td>
+    <td><%= link_to 'Edit', edit_rel_table_order_path(rel_table_order) %></td>
+    <td><%= link_to 'Destroy', rel_table_order, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rel table order', new_rel_table_order_path %>
